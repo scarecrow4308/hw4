@@ -27,7 +27,7 @@ ul {
     padding: 0;
 }
 
-p {
+p, h2, h3 {
     margin: 0;
 }
 
@@ -85,8 +85,9 @@ p {
     color: var(--hover-blue-color);
 }
 
-.logo:hover span,
-.logo:focus span {
+
+.logo:hover>span,
+.logo:focus>span {
     color: black;
 }
 
@@ -210,8 +211,13 @@ p {
 }
 
 .advantages-icon {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-back-color);
+    height: 120px;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .advantages-list-item>h3 {
@@ -309,11 +315,13 @@ p {
     fill: var(--icon-grey-color);
 }
 
-.link-list-item a:hover {
+.link-list-item a:hover,
+.link-list-item a:focus {
     background-color: var(--hover-blue-color);
 }
 
-.link-list-item a:hover svg {
+.link-list-item a:hover svg,
+.link-list-item a:focus svg {
     fill: #FFF;
 }
 
@@ -337,7 +345,8 @@ p {
     border-radius: 4px;
 }
 
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
     border-color: var(--hover-blue-color);
 }
 
@@ -345,7 +354,8 @@ p {
     fill: var(--icon-grey-color);
 }
 
-.clients-list-link:hover svg {
+.clients-list-link:hover svg,
+.clients-list-link:focus svg {
     fill: var(--hover-blue-color);
 }
 
@@ -376,7 +386,8 @@ p {
     letter-spacing: 0.03em;
 }
 
-.filtres-list-item>button:hover {
+.filtres-list-item>button:hover,
+.filtres-list-item>button:focus {
     cursor: pointer;
     background-color: var(--hover-blue-color);
     color: #FFF;
@@ -391,7 +402,8 @@ p {
     flex-wrap: wrap;
 }
 
-.products-list-item:hover {
+.products-list-item:hover,
+.products-list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -430,8 +442,7 @@ p {
 
 /* Footer   ~~~~~   start*/
 .page-footer {
-    padding-top: 60px;
-    height: 250px;
+    padding: 60px 0;
     background-color: var(--dark-back-color);
 }
 
@@ -440,12 +451,12 @@ p {
 }
 
 .page-footer .logo:hover,
-.logo:focus {
+.page-footer .logo:focus {
     color: var(--hover-blue-color);
 }
 
 .page-footer .logo:hover span,
-.logo:focus span {
+.page-footer .logo:focus span {
     color: #FFF;
 }
 
@@ -481,7 +492,8 @@ p {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.page-footer .link-list-item a:hover {
+.page-footer .link-list-item a:hover,
+.page-footer .link-list-item a:focus {
     background: var(--hover-blue-color);
 }
 
